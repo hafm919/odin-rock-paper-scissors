@@ -1,7 +1,7 @@
-humanScore=0;
-computerScore=0;
+let humanScore=0;
+let computerScore=0;
 function getComputerChoice(){
-    choice=Math.ceil(Math.random()*3);
+    let choice=Math.ceil(Math.random()*3);
     
     if (choice===1) return 'Rock';
     else if(choice===2) return 'Paper';
@@ -9,7 +9,7 @@ function getComputerChoice(){
 }
 
 function getHumanChoice(){
-    choice=parseInt(prompt("1:Rock, 2: Paper, 3:Scissors"));
+    let choice=parseInt(prompt("1:Rock, 2: Paper, 3:Scissors"));
     if (choice===1) return 'Rock';
     else if(choice===2) return 'Paper';
     else return 'Scissors';
@@ -17,10 +17,10 @@ function getHumanChoice(){
 }
 
 function playRound(){
-    humanChoice=getHumanChoice();
-    computerChoice=getComputerChoice();
+    let humanChoice=getHumanChoice();
+    let computerChoice=getComputerChoice();
     console.log(computerChoice);
-    winner=-1; //0:computer 1:player
+    let winner=-1; //0:computer 1:player
     if (humanChoice==='Rock'){
         if(computerChoice==='Paper'){
             winner=0
