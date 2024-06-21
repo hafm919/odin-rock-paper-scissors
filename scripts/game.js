@@ -44,14 +44,17 @@ function playRound(humanChoice){
         console.log('Computer won')
         computerScore+=1
         computerScoreDisplay.textContent=computerScore;
+        computerChoiceDisplay.style.backgroundColor='crimson';
     }
     else if(winner===1){
         console.log('Human won')
         playerScore+=1
         playerScoreDisplay.textContent=playerScore;
+        computerChoiceDisplay.style.backgroundColor='darkseagreen';
     }
     else{
         console.log('Tie')
+        computerChoiceDisplay.style.backgroundColor='sandybrown';
     }
 }
 
@@ -60,7 +63,7 @@ function checkGameOver(){
         if (playerScore>computerScore) round.textContent = "You won!";
         else if(playerScore<computerScore) round.textContent = "You lost!";
         else round.textContent = "You tied!";
-        
+
         playerOptions.forEach((option)=>{
             option.style.display='none';
         });
