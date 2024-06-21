@@ -55,18 +55,21 @@ function playRound(humanChoice){
     }
 }
 
-function playGame(){
-    for(let i=0;i<5;i++){
-        playRound();
+function checkGameOver(){
+    if (roundNo>5){
+        if (playerScore>computerScore) round.textContent = "You won!";
+        else if(playerScore<computerScore) round.textContent = "You lost!";
+        else round.textContent = "You tied!";
+        
+        playerOptions.forEach((option)=>{
+            option.style.display='none';
+        });
+        computerChoiceDisplay.style.display='none';
     }
-    console.log("Score- Human:"+playerScore+" Computer:"+ computerScore);
-    if (playerScore>computerScore) console.log("You won!");
-    else if(playerScore<computerScore) console.log("You lost!");
-    else console.log("You tied!");
 }
 
 
-const playerOptions=document.querySelectorAll(".option, .player");
+const playerOptions=document.querySelectorAll(".player");
 const computerChoiceDisplay=document.querySelector("#computer");
 const round=document.querySelector(".round");
 const playerScoreDisplay=document.querySelector('#player-score');
@@ -78,5 +81,6 @@ playerOptions.forEach((option)=>{
         playRound(playerChoice);
         roundNo+=1;
         round.textContent='Round '+roundNo;
+        checkGameOver();
     });
 });
