@@ -1,0 +1,136 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+body{
+    background-image: url('img/Background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+
+}
+
+.main{
+     /* border: #000000 5px solid;  */
+     flex:auto;
+
+}
+
+.player-options{
+    padding-left: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    padding-top: 120px;
+    /* border: #000000 5px solid;  */
+}
+
+.computer-option{
+    padding-right: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    /* border: #000000 5px solid;  */
+}
+
+.title{
+    text-align: center;
+    padding-top: 175px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 80px;
+    color: #fdfde5;
+    text-shadow: 2px 2px #000000
+}
+
+.round{
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 40px;
+    color: #3f153c;
+    text-align: center;
+
+}
+
+.scoreboard{
+    display: flex;
+    /* border: #000000 1px solid; */
+    justify-content: center;
+}
+.score-card{
+    padding: 30px;
+    padding-top: 0px;
+    text-align: center;
+    /* border: #000000 1px solid; */
+    
+}
+
+.score{
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 30px;
+    
+    
+}
+
+
+.option {
+  align-self: center;
+  width:120px;
+  height: 120px;
+  padding: 200px;
+  background-color: #fdfde5;
+  border-image: 0px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 70px auto;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.player:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+  background-color: #a2bec5
+}
+
+.player:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+.katana{
+    background-image: url(img/katana.png);
+}
+.shuriken{
+    background-image: url(img/shuriken.png);
+
+}
+.shield{
+    background-image: url(img/shield.png);
+
+}
+
+.computer{
+    content:url(img/question.png);
+}
