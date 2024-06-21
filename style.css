@@ -119,18 +119,18 @@ body{
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
 
-.katana{
+#katana{
     background-image: url(img/katana.png);
 }
-.shuriken{
+#shuriken{
     background-image: url(img/shuriken.png);
 
 }
-.shield{
+#shield{
     background-image: url(img/shield.png);
 
 }
 
-.computer{
+#computer{
     content:url(img/question.png);
 }
